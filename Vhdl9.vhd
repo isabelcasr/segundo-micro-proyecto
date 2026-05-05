@@ -14,10 +14,10 @@ begin
     begin
         -- Nota: Los displays en FPGAs encienden con '0'
         case data_in is
-            when x"00" => seg_out <= "0001000"; -- Dibuja la letra 'A'
-            when x"01" => seg_out <= "0000011"; -- Dibuja la letra 'b' minúscula
-            when x"02" => seg_out <= "1000110"; -- Dibuja la letra 'C' mayúscula
-            when x"03" => seg_out <= "0100001"; -- Dibuja la letra 'd' minúscula
+            when x"00" => seg_out <= "0001000"; -- Dibuja la letra A
+            when x"01" => seg_out <= "0000011"; -- Dibuja la letra b
+            when x"02" => seg_out <= "1000110"; -- Dibuja la letra C
+            when x"03" => seg_out <= "0100001"; -- Dibuja la letra d
             when others => seg_out <= "1111111"; -- Apaga todo
         end case;
     end process;
